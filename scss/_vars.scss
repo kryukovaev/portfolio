@@ -1,0 +1,28 @@
+$black: #2b2a2c;
+$gray: #6a696b;
+$gray-light: #8d8d8e;
+$white: #ffffff;
+
+// MIXIN
+@mixin notebook {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin mobile-sm {
+  @media screen and (max-width: 565px) {
+    @content;
+  }
+}

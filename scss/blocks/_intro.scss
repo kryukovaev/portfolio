@@ -1,0 +1,82 @@
+.intro__inner {
+  display: flex;
+  position: relative;
+  padding-top: 6.6rem;
+  padding-bottom: 8rem;
+  border-bottom: 1px solid rgba($gray, 0.3);
+  background-image: url("../../images/symbols.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  @include tablets {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    background-size: 850px auto;
+  }
+
+  @include mobile {
+    background-size: 700px auto;
+  }
+
+  @include mobile-sm {
+    background-size: 0;
+  }
+}
+
+.intro__content {
+  width: 50%;
+
+  @include mobile {
+    width: 60%;
+  }
+
+  @include mobile-sm {
+    width: 100%;
+  }
+}
+
+.intro__subtitle {
+  font-size: 2.13rem;
+  font-weight: 200;
+  color: $black;
+
+  @include tablets {
+    font-size: 1.5rem;
+  }
+}
+
+.intro__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $black;
+  margin-bottom: 0.5rem;
+
+  @include tablets {
+    font-size: 2rem;
+  }
+}
+
+.intro__text {
+  font-size: 1.2rem;
+  color: rgba($black, 0.7);
+  margin-bottom: 1.66rem;
+}
+
+.intro__photo {
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  z-index: 1;
+
+  @include tablets {
+    width: 350px;
+  }
+
+  @include mobile {
+    width: 300px;
+  }
+  @include mobile-sm {
+    display: none;
+  }
+}

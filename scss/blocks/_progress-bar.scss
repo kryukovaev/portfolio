@@ -1,0 +1,31 @@
+.progress-bar {
+  margin-bottom: 2.6rem;
+}
+
+.progress-bar__item {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.progress-bar__title {
+  font-size: 0.94rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.progress-bar__bar {
+  width: 139px;
+  height: 6px;
+  background-color: #efefef;
+  text-align: right;
+}
+
+.progress-bar__progress {
+  height: 100%;
+
+  background-color: $gray;
+  transition: width 0.2s linear;
+}
